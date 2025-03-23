@@ -6,10 +6,10 @@ body {
 
 a {
   text-decoration: none;
-  display: block;
 }
 
-ul {
+ul,
+ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -23,12 +23,6 @@ h5,
 h6,
 p {
   margin: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 button {
@@ -53,6 +47,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
 }
 
 .footer .black-white {
@@ -69,6 +64,19 @@ button {
   background-color: #404bbf;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* ------------------HEADER------------------------------ */
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -131,8 +139,7 @@ button {
 /* ------------------HERO------------------------------ */
 .hero {
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 185px;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -157,6 +164,9 @@ button {
   padding: 16px 32px;
   display: block;
   margin: 0 auto;
+  height: 56px;
+  min-width: 169px;
+  border: none;
 }
 
 /* ------------------HERO------------------------------ */
@@ -237,7 +247,7 @@ button {
 }
 
 .team-border {
-  padding: 32px 16px;
+  padding: 32px 0px;
 }
 /* ------------------TEAM------------------------------ */
 
@@ -295,10 +305,10 @@ button {
 /* ------------------FOOTER------------------------------ */
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px 0;
 }
 .footer-logo {
-  padding-top: 100px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   display: inline-block;
 }
 
