@@ -6,10 +6,29 @@ body {
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -18,6 +37,12 @@ button {
 
 .accent {
   color: #2e2f42;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -45,16 +70,34 @@ button {
 }
 
 /* ------------------HEADER------------------------------ */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
 .header-nav {
+  display: flex;
+  align-items: center;
 }
 .header-nav-logo {
+  margin-right: 76px;
+  padding: 24px 0;
 }
 
 .header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .header-nav-item {
 }
 .header-nav-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -63,15 +106,22 @@ button {
 
 .header-address {
   font-style: normal;
+  margin-left: auto;
 }
 
 .header-address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .header-address-item {
 }
 
 .header-address-link {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -81,6 +131,8 @@ button {
 /* ------------------HERO------------------------------ */
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 185px;
 }
 
 .hero-title {
@@ -89,6 +141,10 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -97,6 +153,10 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  border-radius: 4px;
+  padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
 }
 
 /* ------------------HERO------------------------------ */
@@ -104,9 +164,13 @@ button {
 /* ------------------FEATURES------------------------------ */
 
 .features-list {
+  display: flex;
+  gap: 24px;
+  padding: 120px 0;
 }
 
 .features-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .features-subtitle {
@@ -115,6 +179,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .features-text {
@@ -127,6 +192,7 @@ button {
 
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .team-title {
@@ -136,13 +202,19 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
   background-color: #fff;
+  border-radius: 0 0 4px 4px;
+
+  width: calc((100% - 72px) / 4);
 }
 
 .team-image {
@@ -155,6 +227,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -162,10 +235,15 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
 }
+
+.team-border {
+  padding: 32px 16px;
+}
 /* ------------------TEAM------------------------------ */
 
 /* ------------------PORTFOLIO------------------------------ */
 .portfolio {
+  padding: 120px 0;
 }
 
 .portfolio-title {
@@ -175,12 +253,25 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-border {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
 }
 
 .portfolio-img {
@@ -192,6 +283,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -205,10 +297,15 @@ button {
   background-color: #2e2f42;
 }
 .footer-logo {
+  padding-top: 100px;
+  padding-bottom: 16px;
+  display: inline-block;
 }
 
 .footer-text {
+  max-width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  padding-bottom: 100px;
 }
